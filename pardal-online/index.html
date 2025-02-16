@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pardal Online</title>
+    <style>
+        body{
+            background-color: rgb(163, 233, 233);
+            font: normal 18pt arial;
+        }
+        strong{
+            color: red;
+        }
+    </style>
 </head>
 <body>
+    <h1>Pardal Online</h1>
+
+    Qual a velocidade da via: <input type="number" name="via" id="via" placeholder="Km/h">
+    <br>
+    Qual a velocidade do veiculo: <input type="number" name="veiculo" id="veiculo" placeholder="Km/h">
+    <br>
+    <input type="button" value="Exibir" onclick="somar()">
     
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
