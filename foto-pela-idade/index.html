@@ -10,15 +10,14 @@
 
     <h1>Verificador de imagem</h1>
 
-    <!--ENTRADA DO ANO, SEXO E BOTÃO-->
     <div id="verificador"> 
 
-        <div id="input-nascimento">
+        <div id="input-nascimento"><!--ENTRADA DO ANO-->
             Ano de nascimento:
             <input type="number" name="ano_nascimento" id="ano_nascimento">
         </div>
         
-        <div class="input-sexo">
+        <div class="input-sexo"><!--ENTRADA DO SEXO-->
             Sexo:
             <input type="radio" name="sexo" id="homem"  checked>
             <label for="masculino">homem</label>
@@ -26,8 +25,8 @@
             <label for="feminino">mulher</label>
         </div>
         
-        <div id="botao">
-            <input type="button" value="Verificar" id="button">
+        <div id="botao"><!--BOTÃO-->
+            <input type="button" value="Verificar" id="button" onclick="clicar()">
         </div>
 
         <!--RESULTADO DO TEXTO E DA IMAGEM-->
@@ -35,7 +34,14 @@
             <p id="resultado-texto"></p>
             <p id="resultado-imagem"></p>
         </div>
+
+        <div id="resultado-final">
+            <p id="texto-resultado">Preencha os dados acima para ver o resultado</p>
+            <p id="foto-resultado"></p>
+        </div>
     </div>
+
+    
 
     <footer>
         <p>&copy; BrenodeSenaRocha</p>

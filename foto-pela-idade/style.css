@@ -46,6 +46,15 @@ input{
 #button{
     width: 150px;
     padding: 2px;
+    background: rgb(255, 255, 255);
+}
+
+#button:hover{
+    width: 150px;
+    padding: 2px;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 0.7s;
 }
 footer{
     text-align: center;
