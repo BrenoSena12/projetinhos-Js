@@ -1,53 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto pela idade</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Verificador de imagem</h1>
-
-    <div id="verificador"> 
-
-        <div id="input-nascimento"><!--ENTRADA DO ANO-->
-            Ano de nascimento:
-            <input type="number" name="ano_nascimento" id="ano_nascimento">
+     <header>
+        <h1>Verificador de idade</h1>
+     </header>
+     <section>
+        <div>
+            <p>
+                <label for="ano">Ano de nascimento:</label>
+                <input type="number" name="ano" id="ano" min="0">
+            </p>
+            <p>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sexo" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" id="botão" onclick="verificar()">
+            </p>
         </div>
-        
-        <div class="input-sexo"><!--ENTRADA DO SEXO-->
-            Sexo:
-            <input type="radio" name="sexo" id="homem"  checked>
-            <label for="masculino">homem</label>
-            <input type="radio" name="sexo" id="mulher">
-            <label for="feminino">mulher</label>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
         </div>
-        
-        <div id="botao"><!--BOTÃO-->
-            <input type="button" value="Verificar" id="button" onclick="clicar()">
-        </div>
-
-        <!--RESULTADO DO TEXTO E DA IMAGEM-->
-        <div id="resultado">
-            <p id="resultado-texto"></p>
-            <p id="resultado-imagem"></p>
-        </div>
-
-        <div id="resultado-final">
-            <p id="texto-resultado">Preencha os dados acima para ver o resultado</p>
-            <p id="foto-resultado"></p>
-        </div>
-    </div>
-
-    
-
-    <footer>
-        <p>&copy; BrenodeSenaRocha</p>
-    </footer>
-
-
-    <script src="script.js"></script>
+     </section>
+     <footer>
+        <p>&copy;BrenodeSenaRocha</p>
+     </footer>
+     <script src="script.js"></script>
 </body>
 </html>
