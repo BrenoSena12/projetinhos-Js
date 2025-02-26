@@ -14,7 +14,7 @@ function contar(){
 
     //CONDIÇÕES PARA O FUNCIONAMENTO DO LAÇO
     if(inicio < final){
-        if(inicio == 0 || final == 0){
+        if(final == 0){
         texto.innerHTML += `<br> Impossivel de contar!`
         }else if(passos == 0){
         alert(`PASSOS não podem ser 0 ou nulos, o valor 0 será subistituido por 1`)
@@ -28,7 +28,7 @@ function contar(){
             }
         }
     }else{
-        if(inicio == 0 || final == 0){
+        if(final == 0){
             texto.innerHTML += `<br> Impossivel de contar!`
         }else if(passos == 0){
             alert(`PASSOS não podem ser 0 ou nulos, o valor 0 será subistituido por 1`)

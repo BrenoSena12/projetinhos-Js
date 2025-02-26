@@ -1,0 +1,45 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: #d3a27f;
+    font:normal 15pt arial;
+}
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+section{
+    background:white;
+    width: 500px;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.467);
+    margin: auto;
+}
+#entrada{
+    display: flex;
+    gap: 10px;
+}
+input{
+    border: 1px solid black;
+    font-size: 15pt;
+}
+#botao{
+    font-size: 12pt;
+    padding: 1.5pt;
+    background-color: #d3a27f93;
+}
+#botao:hover{
+    background-color: #d3a27f;
+    transition: 0.5s;
+    color: white;
+}
+footer{
+    color: white;
+    text-align: center; 
+}
