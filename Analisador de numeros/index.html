@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div id="entrada_valores">
+            <label for="entrada_numeros">Números(entre 1 e 100):</label>
+            <input type="number" name="entrada_numeros" id="entrada_numeros">
+            <input type="button" value="Adicionar" name="botao" id="botao" class="botao" onclick="adicionar()">
+        </div>
+        <div id="valores_adicionados">
+            <select name="adicionados" id="adicionados" size="10">
+                
+            </select>
+        </div>
+        <div id="saida_resposta">
+            <input type="button" name="botao" id="botao_resposta" class="botao" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="resultado">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;BrenodeSenaRocha</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
